@@ -1,0 +1,145 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Lapikava's portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="https://use.typekit.net/exs1dqi.css">
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+
+
+
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+
+							<ul class="actions">
+												<li><a href="index.html#work" class="button primary">Work</a></li>
+												<li><a href="about.html" class="button">About</a></li>
+							</ul>
+
+
+							<section id="home">
+
+								<h1 id="Greet"></h1>
+								<p>My name is Hanna Lapikava.<br>
+								I'm a multidisciplinary designer based in Krakow, Poland.<br>
+							Currently looking for a new full-time oportunity in Product Design.</p>
+							</section>
+
+
+							<section><a id="work"></a>
+
+								<div class="box alt">
+											<div class="row aln-middle gtr-uniform">
+											<div class="col-6 col-12-small"><span class="image fit"><a href="Project-Emails.html"><img src="images/emails-home-d.png" alt="" /></a></span></div>
+											<div class="col-6 col-12-small">
+											<a href="Project-Emails.html"><h2>Email Design System for IG</h2></a>
+											<p>As a part of global IG rebrand I and our CRM team developed an Email Design System based on our research of current email workflows and company's needs.</p>
+
+											<a href="Project-Emails.html" class="btn"><span class="btn-text">Read more</span></a>
+
+										</div>
+										</div>
+									</div>
+
+
+									<div class="box alt">
+											<div class="row aln-middle gtr-uniform">
+											<div class="col-6 col-12-small"><span class="image fit"><a href="Project-PhotoApp.html"><img src="images/emails-home.png" alt="" /></a></span></div>
+											<div class="col-6 col-12-small">
+											<a href="Project-Emails.html"><h2>Teo - Photo editor app</h2></a>
+											<p>Design for the photo editor Android application which focuses on providing quick and easy quality filters.</p>
+											<a href="#" class="btn"><span class="btn-text">Read more</span></a>
+										</div>
+										</div>
+									</div>
+
+
+									<div class="box alt">
+											<div class="row aln-middle gtr-uniform">
+											<div class="col-6 col-12-small"><span class="image fit"><a href="Project-Blog.html"><img src="images/emails-home.png" alt="" /></a></span></div>
+											<div class="col-6 col-12-small">
+											<a href="Project-Emails.html"><h2>Editorail blog redesign</h2></a>
+											<p>Visual refresh and technical update of outdated blog which editorial whants to revive and keep alive.</p>
+											<a href="#" class="btn"><span class="btn-text">Read more</span></a>
+										</div>
+										</div>
+									</div>
+
+
+									<div class="box alt">
+											<div class="row aln-middle gtr-uniform">
+											<div class="col-6 col-12-small"><span class="image fit"><a href="Project-Blog.html"><img src="images/emails-home.png" alt="" /></a></span></div>
+											<div class="col-6 col-12-small">
+											<a href="Project-Emails.html"><h2>Winter rental app concept</h2></a>
+											<p>Visual refresh and technical update of outdated blog which editorial whants to revive and keep alive.</p>
+											<a href="#" class="btn"><span class="btn-text">Read more</span></a>
+										</div>
+										</div>
+									</div>
+
+
+
+
+
+							</section>
+						</div>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+							<section>
+								<p>Built with tea and good tunes.</p>
+								<ul class="icons">
+									<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
+									<li><a href="#" class="icon brands fa-github"><span class="label">LinkedIn</span></a></li>
+									<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+								</ul>
+							</section>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+	<script type="text/javascript">
+			
+window.onload = ( function() {        
+    getDateTime();
+     })(); 
+
+function getDateTime() {
+    var now  = new Date(); 
+    var hour = now.getHours(); 
+   if(5 <= hour && hour < 12){  
+      document.getElementById('Greet').innerHTML = "Good morning";
+      document.getElementById('Greet').classList.add("morning");
+   }
+   else if(12 <= hour && hour < 17){  
+      document.getElementById('Greet').innerHTML = "Good afternoon";
+      document.getElementById('Greet').classList.add("day");
+   }
+   else {
+         document.getElementById('Greet').innerHTML = "Good evening";
+         document.getElementById('Greet').classList.add("night");
+    }
+}
+		</script>
+
+
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
