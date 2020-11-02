@@ -129,27 +129,7 @@
 			</div>
 
 		<!-- Scripts -->
-	<script type="text/javascript">
-			
-window.onload = ( function() {        
-    getDateTime();
-     })(); 
-
-function getDateTime() {
-    var now  = new Date(); 
-    var hour = now.getHours(); 
-   if(5 <= hour && hour < 12){  
-      document.getElementById('Greet').innerHTML = "Good morning";
-   }
-   if(12 <= hour && hour < 17){  
-      document.getElementById('Greet').innerHTML = "Good afternoon";
-   }
-   else {
-         document.getElementById('Greet').innerHTML = "Good evening";
-    }
-}
-		</script>
-
+	
 
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
