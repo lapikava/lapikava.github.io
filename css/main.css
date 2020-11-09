@@ -104,14 +104,69 @@ input, select, textarea {
 
 	a {
 		text-decoration: none;
-		color: #595b83;
+		color: #171930;
 		font-size: 14pt;
 	}
 
-		a:hover {
-			border-bottom-color: transparent;
-			color: #333456 !important;
-		}
+	p a {
+		border-bottom: dashed 1px;
+
+	}
+
+	a:hover {
+		border: none;
+	}
+
+	#lkdn {
+		border-bottom: dotted 3px #0e65c2;
+		transition: all .3s ease-out;
+
+	}
+
+	#cv {
+		border-bottom: dotted 3px #060930;
+		transition: all .3s ease-out;
+
+	}
+
+	#mail {
+		border-bottom: dotted 3px #F4B400;
+		transition: all .3s ease-out;
+
+	}
+
+	#drbl {
+		border-bottom: dotted 3px #ea4d88;
+		transition: all .3s ease-out;
+
+	}
+
+	#lkdn:hover {
+		background-color: #0e65c2;
+		color: #ffffff;
+		padding: 10px 20px;
+
+	}
+
+	#cv:hover {
+		background-color: #060930;
+		color: #ffffff;
+		padding: 10px 20px;
+
+	}
+
+	#mail:hover {
+		background-color: #F4B400;
+		color: #ffffff;
+		padding: 10px 20px;
+
+	}
+
+	#drbl:hover {
+		background-color: #ea4d88;
+		color: #ffffff;
+		padding: 10px 20px;
+	}
 
 	strong, b {
 		font-weight: 900;
@@ -124,7 +179,7 @@ input, select, textarea {
 	p {
 		margin: 0 0 1em 0;
 		font-size: 15pt;
-		color: #060930;
+		color: #3A3B4A;
 	}
 
 	h1 {
@@ -136,10 +191,11 @@ input, select, textarea {
 		line-height: 1.3;
 		margin: 0 0 0.5em 0;
 		letter-spacing: -0.035em;
-		color: #333456;
+		color: #3C417D;
 	}
 
 	#Greet {
+		margin-bottom: 0;
 		animation: flow 10s ease-in-out infinite;
 		background-color: #aa4b6b;
 		background-size: 300%;
@@ -162,7 +218,7 @@ input, select, textarea {
 
 
 	.night {
-		background-image: linear-gradient(30deg, #aa4b6b 0%, #6b6b83 50%, #3b8d99 100%);
+		background-image: linear-gradient(30deg, #0D324D 0%, #0CBABA 100%);
 	}
 
 	@keyframes flow {
@@ -223,7 +279,18 @@ input, select, textarea {
 		font-weight: 400;
 		font-style: normal;
 		font-size: 2em !important;
-		color: #060930;
+		color: #3A3B4A;
+		padding: 1em 0 0.5em 0;
+
+	}
+
+	.nextpr {
+		font-size: 1em !important;
+
+	}
+
+	.nextpr:hover, .fa-angle-right:hover, .fa-angle-left:hover, .fa-arrow-left:hover {
+		color: #61647D !important;
 
 	}
 
@@ -293,6 +360,51 @@ input, select, textarea {
 	.align-right {
 		text-align: right;
 	}
+
+
+
+/* Icon */
+
+	i {
+		color: #3A3B4A;
+	}
+
+	.fa-linkedin-in {
+		padding: 10px;		
+		transition: all .3s ease-out;
+
+	}
+
+	.fa-envelope {
+		padding: 10px;
+		transition: all .3s ease-out;
+
+	}
+
+	.fa-dribbble {
+		padding: 10px;
+		transition: all .3s ease-out;
+
+	}
+
+	.fa-linkedin-in:hover {
+		color: #0e65c2;
+
+	}
+
+	.fa-envelope:hover {
+		color: #F4B400;
+
+	}
+
+	.fa-dribbble:hover {
+		color: #ea4d88;
+	}
+
+
+
+
+
 
 /* Row */
 
@@ -1301,6 +1413,10 @@ input, select, textarea {
 					justify-content: flex-end;
 				}
 
+				.row.aln-nextprev {
+					justify-content: center;
+				}
+
 				.row.aln-top {
 					align-items: flex-start;
 				}
@@ -1546,6 +1662,10 @@ input, select, textarea {
 					justify-content: flex-end;
 				}
 
+				.row.aln-nextprev {
+					justify-content: center;
+				}
+
 				.row.aln-top {
 					align-items: flex-start;
 				}
@@ -1765,23 +1885,8 @@ input, select, textarea {
 /* Section/Article */
 
 
-
 	section.special, article.special {
 		text-align: center;
-	}
-
-	section.right, article.right, div.right {
-		float: right;
-		width: 50%;
-	}
-
-	section.left, article.left, div.left {
-		float: left;
-		width: 50%;
-	}
-
-	section.next, article.next, div.next {
-		clear: both;
 	}
 
 	header p {
@@ -1794,78 +1899,11 @@ input, select, textarea {
 			margin-top: 0;
 		}
 
-		section.right, article.right, div.right, section.left, article.left, div.left {
-		float: none;
-		width: 100%;
 	}
 
 	}
 
-/* Icon */
 
-	.icon {
-		text-decoration: none;
-		border-bottom: none;
-		position: relative;
-	}
-
-		.icon:before {
-			-moz-osx-font-smoothing: grayscale;
-			-webkit-font-smoothing: antialiased;
-			display: inline-block;
-			font-style: normal;
-			font-variant: normal;
-			text-rendering: auto;
-			line-height: 1;
-			text-transform: none !important;
-			font-family: 'Font Awesome 5 Free';
-			font-weight: 400;
-		}
-
-		.icon > .label {
-			display: none;
-		}
-
-		.icon:before {
-			line-height: inherit;
-		}
-
-		.icon.solid:before {
-			font-weight: 900;
-		}
-
-		.icon.brands:before {
-			font-family: 'Font Awesome 5 Brands';
-		}
-
-		.icon.style2 {
-			-moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-			-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-			-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-			transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-			background-color: transparent;
-			border: solid 1px #c9c9c9;
-			border-radius: 4px;
-			width: 2.65em;
-			height: 2.65em;
-			display: inline-block;
-			text-align: center;
-			line-height: 2.65em;
-			color: inherit;
-		}
-
-			.icon.style2:before {
-				font-size: 1.1em;
-			}
-
-			.icon.style2:hover {
-				color: #f2849e;
-				border-color: #f2849e;
-			}
-
-			.icon.style2:active {
-				background-color: rgba(242, 132, 158, 0.1);
-			}
 
 /* List */
 
@@ -1928,8 +1966,8 @@ input, select, textarea {
 		cursor: default;
 		list-style: none;
 		margin-left: -1em;
-		padding: 1em 0 0 0;
-		justify-content: flex-end;
+		padding: 1em 0 1em 0;
+		justify-content: flex-start;
 		color: #595b83;
 	}
 
@@ -2085,34 +2123,29 @@ input, select, textarea {
 /* my buttons */
 
 .btn {
+	display: inline-block;
   margin: 20px auto;
   border: none;
   padding: 10px 20px;
   font-size: 15pt;
-  position: relative;
+   background: #060930;
+   background-size: 200% auto;
+   background-image: linear-gradient(to right, #060930 0%, #595b83 50%, #060930 100%);
+   color: #FFFFFF;
+   text-decoration: none;
+   cursor: pointer;
+   text-align: center;
+   transition: 0.5s;
 }
 
-.btn::before {
-  -webkit-transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  content: '';
-  width: 0%;
-  height: 100%;
-  background: black;
-  position: absolute;
-  top: 0;
-  left: 0;
+.btn:hover {
+	background-position: right center;
 }
 
-.btn .btn-text {
-	font-size:15pt;
-  color: white;
-  mix-blend-mode: difference;
-}
-.btn:hover::before {
-  background: black;
-  width: 100%;
-}
+
+
+
+
 
 
 
