@@ -78,7 +78,7 @@ input, select, textarea {
 /* Type */
 
 	body, input, select, textarea, ul, ol {
-		color: #060930;
+		color: #3A3B4A;
 		font-family: proxima-nova, sans-serif;
 		font-weight: 400;
 		font-style: normal;
@@ -109,7 +109,7 @@ input, select, textarea {
 	}
 
 	p a {
-		border-bottom: dashed 1px;
+		border-bottom: solid 1px;
 
 	}
 
@@ -118,54 +118,42 @@ input, select, textarea {
 	}
 
 	#lkdn {
-		border-bottom: dotted 3px #0e65c2;
 		transition: all .3s ease-out;
 
 	}
 
 	#cv {
-		border-bottom: dotted 3px #060930;
 		transition: all .3s ease-out;
 
 	}
 
 	#mail {
-		border-bottom: dotted 3px #F4B400;
 		transition: all .3s ease-out;
 
 	}
 
 	#drbl {
-		border-bottom: dotted 3px #ea4d88;
 		transition: all .3s ease-out;
 
 	}
 
 	#lkdn:hover {
-		background-color: #0e65c2;
-		color: #ffffff;
-		padding: 10px 20px;
+		color: #0e65c2;
 
 	}
 
 	#cv:hover {
-		background-color: #060930;
-		color: #ffffff;
-		padding: 10px 20px;
+		color: #fafafa;
 
 	}
 
 	#mail:hover {
-		background-color: #F4B400;
-		color: #ffffff;
-		padding: 10px 20px;
+		color: #F4B400;
 
 	}
 
 	#drbl:hover {
-		background-color: #ea4d88;
-		color: #ffffff;
-		padding: 10px 20px;
+		color: #ea4d88;
 	}
 
 	strong, b {
@@ -189,14 +177,16 @@ input, select, textarea {
 		font-size: 6em;
 		font-weight: 700;
 		line-height: 1.3;
-		margin: 0 0 0.5em 0;
+		padding: 0.5em 0 0.5em 0;
 		letter-spacing: -0.035em;
-		color: #3C417D;
+		color: #0FC4FA;
 	}
 
 	#Greet {
+		font-size: 8em;
+		color: #0FC4FA;
 		margin-bottom: 0;
-		animation: flow 10s ease-in-out infinite;
+		/*animation: flow 10s ease-in-out infinite;
 		background-color: #aa4b6b;
 		background-size: 300%;
 		-webkit-background-clip: text;
@@ -204,7 +194,7 @@ input, select, textarea {
 		background-clip: text;
   		-webkit-text-fill-color: transparent;
     	-moz-text-fill-color: transparent;
-  		text-fill-color: transparent;
+  		text-fill-color: transparent;*/
 	}
 
 	.morning {
@@ -289,8 +279,8 @@ input, select, textarea {
 
 	}
 
-	.nextpr:hover, .fa-angle-right:hover, .fa-angle-left:hover, .fa-arrow-left:hover {
-		color: #61647D !important;
+	.nextpr:hover, .fa-angle-right:hover, .fa-angle-left:hover, .fa-arrow-left:hover, .fa-home:hover {
+		color:red !important;
 
 	}
 
@@ -402,6 +392,78 @@ input, select, textarea {
 	}
 
 
+
+
+
+/*Specials*/
+
+
+.home-container {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	align-content: center;
+
+	background: linear-gradient(218deg, #fda468, #f92867, #ffd47c);
+    background-size: 600% 600%;
+
+    -webkit-animation: AnimationBG 11s ease infinite;
+    -moz-animation: AnimationBG 11s ease infinite;
+    animation: AnimationBG 11s ease infinite;
+
+    position: relative;
+}
+
+@-webkit-keyframes AnimationBG {
+    0%{background-position:81% 0%}
+    50%{background-position:20% 100%}
+    100%{background-position:81% 0%}
+}
+@-moz-keyframes AnimationBG {
+    0%{background-position:81% 0%}
+    50%{background-position:20% 100%}
+    100%{background-position:81% 0%}
+}
+@keyframes AnimationBG {
+    0%{background-position:81% 0%}
+    50%{background-position:20% 100%}
+    100%{background-position:81% 0%}
+}
+
+.home-text {
+	color: #ffffff !important;
+	/*font-size: 2em;*/
+}
+
+.selected {
+	position: absolute;
+	bottom: 1em;
+	left: 50%;
+	text-align: center;
+}
+
+.home-projects {
+	padding-top: 2em;
+}
+
+header {
+		position: sticky; top: 0;
+		padding: 0 0 0 0 ;
+		background-color: #fafafa;
+		/*background: linear-gradient(218deg, #fda468, #f92867, #ffd47c);
+    	background-size: 600% 600%;
+
+    	-webkit-animation: AnimationBG 11s ease infinite;
+    	-moz-animation: AnimationBG 11s ease infinite;
+    	animation: AnimationBG 11s ease infinite;*/
+		z-index: 1000;
+		opacity: 0.9;
+	}
+
+#home {
+		height: 100vh;
+		padding-left: 6em;
+	}
 
 
 
@@ -1968,7 +2030,7 @@ input, select, textarea {
 		margin-left: -1em;
 		padding: 1em 0 1em 0;
 		justify-content: flex-start;
-		color: #595b83;
+		color: #3A3B4A;
 	}
 
 		ul.actions li {
@@ -2186,13 +2248,7 @@ input, select, textarea {
 
 /* Header */
 
-	#header {
-		padding: 8em 0 1em 0 ;
-	}
 
-	#home {
-		padding: 6em 0 6em 0 ;
-	}
 
 
 
@@ -2318,8 +2374,8 @@ input, select, textarea {
 /* Footer */
 
 	#footer {
-		padding: 5em 0 6em 0 ;
-		background-color: #ffffff;
+		padding: 6em 0 6em 0 ;
+		background-color: #fafafa;
 		text-align: center;
 	}
 
