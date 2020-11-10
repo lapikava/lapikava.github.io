@@ -115,7 +115,7 @@
 				<!-- Footer -->
 					<footer id="footer">
 							<section>
-								<p>Thanks for visiting &#x1F389;<br>
+								<p>Thanks for visiting &#x1F389;<br><br>
 									For details please <a href="https://www.linkedin.com/in/hanna-lapikava-189355108/" target="_blank" id="lkdn">visit my LinkedIn</a> or <a href="https://drive.google.com/file/d/1TOuq2bGCOxdKJQ5L7uS5DyA0eUQQ0ZGe/view?usp=sharing" target="_blank" id="cv">download my CV</a>.<br/>
 
 								More visuals are available <a href="https://dribbble.com/lapikava" target="_blank" id="drbl">on Dribbble</a>.<br/>
@@ -138,15 +138,15 @@ function getDateTime() {
     var hour = now.getHours(); 
    if(5 <= hour && hour < 12){  
       document.getElementById('Greet').innerHTML = "Good morning";
-      // document.getElementById('Greet').classList.add('morning');
+      document.getElementById('home').classList.add('morning');
    }
    else if(12 <= hour && hour < 17){  
       document.getElementById('Greet').innerHTML = "Good afternoon";
-      // document.getElementById('Greet').classList.add('day');
+      document.getElementById('home').classList.add('day');
    }
    else {
          document.getElementById('Greet').innerHTML = "Good evening";
-         // document.getElementById('Greet').classList.add('night');
+         document.getElementById('home').classList.add('night');
     }
 }
 		</script>
