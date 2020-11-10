@@ -184,7 +184,7 @@ input, select, textarea {
 
 	#Greet {
 		font-size: 8em;
-		color: #0FC4FA;
+		color: #ffffff;
 		margin-bottom: 0;
 		/*animation: flow 10s ease-in-out infinite;
 		background-color: #aa4b6b;
@@ -404,7 +404,6 @@ input, select, textarea {
 	justify-content: flex-start;
 	align-content: center;
 
-	background: linear-gradient(218deg, #fda468, #f92867, #ffd47c);
     background-size: 600% 600%;
 
     -webkit-animation: AnimationBG 11s ease infinite;
