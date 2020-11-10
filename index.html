@@ -18,31 +18,36 @@
 
 				<!-- Main -->
 					<div id="main">
+
+						<div id="home" class="home-container">
+
+							<div class="home-content">
+
+								<h1 id="Greet"></h1>
+								<p class="home-text">My name is Hanna Lapikava.<br/>
+								I'm a multidisciplinary designer based in Krakow, Poland.<br/>
+
+								I have experience in web design, mobile app design, marketing design, print design.<br/>
+						
+								As side activities I tap into code and play with 3D.</p>
+
+								<ul class="icons">
+									<li><a href="https://dribbble.com/lapikava" target="_blank"><i class="fab fa-dribbble fa-lg" style="color:#ffffff;"></i></a></li>
+									<li><a href="https://www.linkedin.com/in/hanna-lapikava-189355108/" target="_blank"><i class="fab fa-linkedin-in fa-lg" style="color:#ffffff;"></i></a></li>
+									<li><a href="mailto:hanna.lapikava@gmail.com" target="_blank"><i class="far fa-envelope fa-lg" style="color:#ffffff;"></i></a></li>
+								</ul>
+
+								<div class="selected"><a href="#work" class="home-text pulse">&#8595;</a></div>
+
+							</div>
+
+						</div>
+
+
 						<div class="inner">
 
 
-
-							<section id="home">
-
-								<h1 id="Greet"></h1>
-								<p>My name is Hanna Lapikava.<br/>
-								I'm a multidisciplinary designer based in Krakow, Poland.<br/>
-
-							I have experience in web design, mobile app design, marketing design, print design.<br/>
-						
-						As side activities I tap into code and play with 3D.</p>
-
-						<p>For details please <a href="https://www.linkedin.com/in/hanna-lapikava-189355108/" target="_blank" id="lkdn">visit my LinkedIn</a> or <a href="https://drive.google.com/file/d/1TOuq2bGCOxdKJQ5L7uS5DyA0eUQQ0ZGe/view?usp=sharing" target="_blank" id="cv">download my CV</a>.<br/>
-
-						More visuals are available <a href="https://dribbble.com/lapikava" target="_blank" id="drbl">on Dribbble</a>.<br/>
-
-						Want to have a chat? <a href="mailto:hanna.lapikava@gmail.com" target="_blank" id="mail">Drop me an email</a>.
-					</p>
-
-							</section>
-
-
-							<section><a id="work"></a>
+							<section class="home-projects">
 
 								<div class="box alt">
 											<div class="row aln-middle gtr-uniform">
@@ -53,7 +58,7 @@
   													<a href="Project-Emails.html" class="btn2"><span>Read more</span></a>
 
 												</div>
-												<div class="col-6 col-12-small imp-small"><span class="image fit"><a href="Project-Emails.html"><img src="images/emails-home-iggrey-light.png" alt="" /></a></span></div>
+												<div class="col-6 col-12-small imp-small"><a id="work"></a><span class="image fit"><a href="Project-Emails.html"><img src="images/emails-home-iggrey-light.png" alt="" /></a></span></div>
 											
 											</div>
 									</div>
@@ -102,20 +107,20 @@
 
 
 							</section>
+
+
 						</div>
 					</div>
 
 				<!-- Footer -->
 					<footer id="footer">
 							<section>
-								<!-- <p>Built with tea and good tunes.</p> -->
-								<ul class="icons">
-									<ul class="icons">
-									<li><a href="https://dribbble.com/lapikava" target="_blank"><i class="fab fa-dribbble fa-2x"></i></a></li>
-									<li><a href="https://www.linkedin.com/in/hanna-lapikava-189355108/" target="_blank"><i class="fab fa-linkedin-in fa-2x"></i></a></li>
-									<li><a href="mailto:hanna.lapikava@gmail.com" target="_blank"><i class="far fa-envelope fa-2x"></i></a></li>
-								</ul>
-								</ul>
+								<p>Thanks for visiting &#x1F389;<br>
+									For details please <a href="https://www.linkedin.com/in/hanna-lapikava-189355108/" target="_blank" id="lkdn">visit my LinkedIn</a> or <a href="https://drive.google.com/file/d/1TOuq2bGCOxdKJQ5L7uS5DyA0eUQQ0ZGe/view?usp=sharing" target="_blank" id="cv">download my CV</a>.<br/>
+
+								More visuals are available <a href="https://dribbble.com/lapikava" target="_blank" id="drbl">on Dribbble</a>.<br/>
+
+								Want to have a chat? <a href="mailto:hanna.lapikava@gmail.com" target="_blank" id="mail">Drop me an email</a>.</p>
 							</section>
 					</footer>
 
@@ -133,15 +138,15 @@ function getDateTime() {
     var hour = now.getHours(); 
    if(5 <= hour && hour < 12){  
       document.getElementById('Greet').innerHTML = "Good morning";
-      document.getElementById('Greet').classList.add('morning');
+      // document.getElementById('Greet').classList.add('morning');
    }
    else if(12 <= hour && hour < 17){  
       document.getElementById('Greet').innerHTML = "Good afternoon";
-      document.getElementById('Greet').classList.add('day');
+      // document.getElementById('Greet').classList.add('day');
    }
    else {
          document.getElementById('Greet').innerHTML = "Good evening";
-         document.getElementById('Greet').classList.add('night');
+         // document.getElementById('Greet').classList.add('night');
     }
 }
 		</script>
