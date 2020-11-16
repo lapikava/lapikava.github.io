@@ -2311,8 +2311,8 @@ header {
   -webkit-transition: width 0.3s, left 0.3s 0.05s;
   transition: width 0.3s, left 0.3s 0.05s;
 }
-#arrow_1 .arrow.arrow--left:hover span, #arrow_1 .arrow.arrow--left:hover:before, #arrow_1 .arrow.arrow--left:hover:after {
-  left: -21.216407355px;
+#arrow_1 .arrow.arrow--left:hover span {
+  right: -21.216407355px;
 }
 #arrow_1 .arrow.arrow--right span, #arrow_1 .arrow.arrow--right:before, #arrow_1 .arrow.arrow--right:after {
   right: 0;
@@ -2327,8 +2327,8 @@ header {
   -webkit-transition: width 0.3s, right 0.3s 0.05s;
   transition: width 0.3s, right 0.3s 0.05s;
 }
-#arrow_1 .arrow.arrow--right:hover span, #arrow_1 .arrow.arrow--right:hover:before, #arrow_1 .arrow.arrow--right:hover:after {
-  right: -21.216407355px;
+#arrow_1 .arrow.arrow--right:hover span {
+  left: -21.216407355px;
 }
 
 #arrow_1 .arrow.arrow--right {
@@ -2396,13 +2396,14 @@ header {
   -webkit-transition: width 0.3s, right 0.3s 0.05s;
   transition: width 0.3s, right 0.3s 0.05s;
 }
-#arrow_2 .arrow.arrow--down:hover span, #arrow_2 .arrow.arrow--down:hover:before, #arrow_2 .arrow.arrow--down:hover:after {
-  right: -21.216407355px;
+#arrow_2 .arrow.arrow--down:hover span {
+  left: -21.216407355px;
 }
 
 #arrow_2 .arrow.arrow--down {
   margin: 10px;
 }
+
 
 
 
