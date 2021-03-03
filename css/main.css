@@ -376,6 +376,14 @@ input, select, textarea {
 		color: #ea4d88;
 	}
 
+	.fa-lg {
+ 		transition: all .2s ease-in-out;
+ 	}
+
+ 	.fa-lg:hover {
+ 		transform: scale(1.2);
+ 	}
+
 
 
 
